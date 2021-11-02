@@ -1,4 +1,4 @@
-# basic-api-server class02 /lab 2
+# basic-api-server class03 /lab 3
 its a backend server to practice using tests units and DB:
 
 ## Deployment Test
