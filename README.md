@@ -2,16 +2,15 @@
 its a backend server to practice using tests units and DB:
 
 ## Deployment Test
-  * HEROKU URL: https://hanin-server-express.herokuapp.com/person?name=hanin 
-  * BACKEND: https://github.com/HaninHaidrah/basic-express-server 
-  * PULL request: https://github.com/HaninHaidrah/basic-express-server/pull/1 
-
+  * HEROKU URL: https://serever-api-hanin.herokuapp.com/employee 
+  * BACKEND: https://github.com/HaninHaidrah/basic-api-server  
+  * PULL request: https://github.com/HaninHaidrah/basic-api-server/pull/2 
 
 ## SET UP:
 > .env /PORT
 
 ## Running the app: 
-> npm run dev // Endpoint: /pesron
+> npm run dev // Endpoint: /movie,employee
 
 ## Tests:
 > npm run test
