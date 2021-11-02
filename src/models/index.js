@@ -30,13 +30,16 @@ let sequelize= new Sequelize(postgres_URL,sequelizeOptions);
 
 
 // require the models so we can pass the DataType and sequilze library to use its methods in the model file for it.
-const employee =require('./employees.model')
+const employee =require('./employees.model');
+const movie =require('./movie.model');
+
 
 // export the models after they have been added to them and the connection between ourDB and postgres to be run before start the server.
 
 module.exports = {  
   db:sequelize,
-  employee:employee(sequelize,DataTypes)
+  employee:employee(sequelize,DataTypes),
+  movie:movie(sequelize,DataTypes)
 }
     // sequelize,employee(sequelize,DataTypes)
 

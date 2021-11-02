@@ -10,6 +10,7 @@ const notFoundHandler = require('./error-handlers/404');
 const errorHandler = require('./error-handlers/500');
 const logger = require('./middleware/logger');
 const employeeRoute=require('./routes/employee.route');
+const movieRoute = require('./routes/movie.route');
 const PORT = process.env.PORT || 8000;
 
 // global middleware
@@ -18,6 +19,7 @@ app.use(express.json());
 
 
 app.use(employeeRoute); // use the employess routes
+app.use(movieRoute)
 
 //global middleware we should add them after the routes
 app.use('*', notFoundHandler);
