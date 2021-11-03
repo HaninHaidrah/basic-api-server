@@ -24,7 +24,7 @@ let sequelizeOptions = process.env.NODE_ENV === 'production' ? {
     }
   } : {};
 
-// create instance to connect our database with postgress using  env virables:
+// create instance to connect our server with postgress using  env virables:
 
 let sequelize= new Sequelize(postgres_URL,sequelizeOptions);
 
@@ -38,7 +38,7 @@ const movie =require('./movie.model');
 
 module.exports = {  
   db:sequelize,
-  employee:employee(sequelize,DataTypes),
+  employee:employee(sequelize,DataTypes),//once we did this it means we add a table
   movie:movie(sequelize,DataTypes)
 }
     // sequelize,employee(sequelize,DataTypes)
